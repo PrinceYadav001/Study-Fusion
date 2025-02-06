@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester 1 - Subjects</title>
+    <style>/* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+            background-blend-mode: multiply;
+            color: #101820; /* Deep Charcoal for text */
+            line-height: 1.6; /* Improved line height for readability */
+            font-size: 16px;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #FEE715; /* Vibrant Yellow */
+            color: white;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow */
+        }
+        
+        header .header-left .logo {
+            width: 50px;
+            height: auto;
+        }
+        
+        header .header-center h1 {
+            font-size: 2.8rem;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+        
+        header .header-right .subscribe-btn {
+            background-color: #101820;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        
+        header .header-right .subscribe-btn:hover {
+            background-color: #FEE715; /* Change hover to vibrant yellow */
+            transform: scale(1.05);
+        }
+        
+        /* Subject Section */
+        .subject-section {
+            text-align: center;
+            margin: 40px 20px;
+        }
+        
+        .subject-section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #FEE715;
+            margin-bottom: 30px;
+        }
+        
+        .subject-cards {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 0 20px;
+        }
+        
+        .subject-card {
+            width: 300px;
+            background-color: #ffffff;
+            color: #101820;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #FEE715;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+        }
+        
+        .subject-card h3 {
+            font-size: 1.6rem;
+            color: #101820;
+        }
+        
+        .subject-card p {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+        }
+        
+        .subject-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .subject-card a {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #FEE715;
+            color: #101820;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+        .subject-card:hover {
+            background-color: #f1f1f1;
+            transform: translateY(-10px);
+        }
+        
+        .subject-card:hover a {
+            background-color: #101820;
+            color: white;
+        }
+        
+        /* Footer Styles */
+        footer {
+            background-color: #101820;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        footer a {
+            color: #FEE715;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+        
+        footer a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        
+        footer a:focus {
+            outline: 2px dashed #FEE715; /* Focus state */
+        }
+        
+        /* Animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img src="path_to_logo.png" alt="Galgotias University Logo" class="logo">
+        </div>
+        <div class="header-center">
+            <h1>Galgotias University B.Tech Resources</h1>
+        </div>
+        <div class="header-right">
+            <a href="https://www.youtube.com/channel/YOUR_CHANNEL_ID" target="_blank">
+                <button class="subscribe-btn">Subscribe to My YouTube Channel</button>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="subject-section">
+            <h2>Semester 1 Subjects</h2>
+            <div class="subject-cards">
+                <div class="subject-card">
+                    <img src="subject1.jpg" alt="Mathematics I">
+                    <h3>Mathematics I</h3>
+                    <p>Free Resources for Learning Mathematics I</p>
+                    <a href="subject1.html">Explore Resources</a>
+                </div>
+                <div class="subject-card">
+                    <img src="subject2.jpg" alt="Physics">
+                    <h3>Physics</h3>
+                    <p>Free Resources for Learning Physics</p>
+                    <a href="subject1 - Copy.html">Explore Resources</a>
+                </div>
+                <div class="subject-card">
+                    <img src="subject3.jpg" alt="C Programming">
+                    <h3>C Programming</h3>
+                    <p>Free Resources for Learning C Programming</p>
+                    <a href="subject1 - Copy (2).html">Explore Resources</a>
+                </div>
+                <div class="subject-cards">
+                    <div class="subject-card">
+                        <img src="subject1.jpg" alt="Mathematics I">
+                        <h3>Mathematics I</h3>
+                        <p>Free Resources for Learning Mathematics I</p>
+                        <a href="subject1 - Copy (3).html">Explore Resources</a>
+                    </div>
+                    <div class="subject-cards">
+                        <div class="subject-card">
+                            <img src="subject1.jpg" alt="Mathematics I">
+                            <h3>Mathematics I</h3>
+                            <p>Free Resources for Learning Mathematics I</p>
+                            <a href="subject1 - Copy (4).html">Explore Resources</a>
+                        </div>
+                        <div class="subject-cards">
+                            <div class="subject-card">
+                                <img src="subject1.jpg" alt="Mathematics I">
+                                <h3>Mathematics I</h3>
+                                <p>Free Resources for Learning Mathematics I</p>
+                                <a href="subject1 - Copy (5).html">Explore Resources</a>
+                            </div>
+                <!-- Add more subject cards as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Galgotias University</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+    color: #101820; /* Deep Charcoal for text */
+    line-height: 1.6; /* Improved line height for readability */
+    font-size: 16px;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Animation for page load */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    0% { opacity: 0; transform: translateY(100px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes rotateIn {
+    0% { opacity: 0; transform: rotate(-180deg); }
+    100% { opacity: 1; transform: rotate(0); }
+}
+
+* {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Header */
+header {
+    background-color: #FEE715; /* Vibrant Yellow */
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow */
+    position: relative;
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Media query for responsive header */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: left;
+    }
+}
+
+.header-left .logo {
+    width: 50px;
+    height: auto;
+}
+
+.header-center h1 {
+    font-size: 2.8rem;
+    margin: 0;
+    letter-spacing: 2px;
+    animation: slideUp 1s ease-out;
+}
+
+.header-right .subscribe-btn {
+    background-color: #101820;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 2s ease-out;
+}
+
+.header-right .subscribe-btn:hover {
+    background-color:  #101820; /* Change hover to vibrant yellow */
+    transform: scale(1.05);
+}
+
+/* Upcoming Events */
+.upcoming-events {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f1f1f1;
+    text-align: center;
+    animation: rotateIn 1.5s ease-out;
+}
+
+/* Batch Cards Section */
+
+.batch-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 40px 0;
+    gap: 30px;
+    animation: slideUp 1.5s ease-out;
+}
+
+.batch-card {
+    width: 240px;
+    background-color: #ffffff;
+    color: #101820;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    padding: 25px;
+    border: 2px solid #FEE715;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    opacity: 0;
+    animation: slideUp 2s forwards;
+}
+
+.batch-card h2 a {
+    text-decoration: none;
+    color: #101820;
+    font-size: 1.6rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.batch-card p {
+    color: #7f8c8d;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.batch-card:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-10px);
+}
+
+.batch-card:hover h2 a {
+    color:  #101820; /* Highlight link on hover */
+}
+
+/* Adjust batch image styling */
+.batch-img {
+    width: 100%; /* Makes images responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Rounded corners for a neat look */
+    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+}
+
+/* Optional: Add zoom effect on hover for batch images */
+.batch-card:hover .batch-img {
+    transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+/* Event Banner */
+.events-banner {
+    background-image: url('Event\ Banner\ \(1\).png');
+    background-size: cover;
+    background-position: center center;
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+    opacity: 0.9;
+    border-bottom: 4px solid #FEE715;
+    animation: fadeIn 2s ease-out;
+}
+
+.events-banner h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+/* Event Cards Section */
+.events-section h2{
+    color: white;
+}
+
+.events-cards {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+    margin: 40px 0;
+    animation: slideUp 2s ease-out;
+}
+
+.event-card {
+    width: 320px;
+    background-color: #ffffff;
+    color: #101820;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid #FEE715;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    opacity: 0;
+    animation: slideUp 2s forwards;
+}
+
+.event-card h3 a {
+    text-decoration: none;
+    color: #101820;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.event-card p {
+    color: #7f8c8d;
+    font-size: 1rem;
+}
+
+.event-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.event-card:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+    background-color: #101820;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2.5s ease-out;
+}
+
+footer a {
+    color: #FEE715;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+footer a:focus {
+    outline: 2px dashed #FEE715; /* Focus state */
+}
