@@ -33,7 +33,7 @@ body {
 
 /* Header */
 header {
-    background-color: #FEE715; /* Vibrant Yellow */
+    background-color: #ffd200; /* Vibrant Yellow */
     color: white;
     padding: 20px 30px;
     text-align: center;
@@ -90,6 +90,32 @@ header {
     text-align: center;
     animation: rotateIn 1.5s ease-out;
 }
+/* Styling for YouTube Videos Section */
+.videos-container {
+    display: flex;
+    justify-content: center; /* Center align the videos */
+    gap: 20px; /* Space between videos */
+    flex-wrap: wrap; /* Wrap to the next line on small screens */
+}
+
+.video iframe {
+    width: 400px; /* Adjust width for better responsiveness */
+    height: 250px; /* Adjust height accordingly */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .videos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
 
 /* Batch Cards Section */
 
@@ -110,7 +136,7 @@ header {
     border-radius: 10px;
     text-align: center;
     padding: 25px;
-    border: 2px solid #FEE715;
+    border: 2px solid #ffd200;
     transition: transform 0.3s ease, background-color 0.3s ease;
     opacity: 0;
     animation: slideUp 2s forwards;
@@ -154,14 +180,14 @@ header {
 
 /* Event Banner */
 .events-banner {
-    background-image: url('Event\ Banner\ \(1\).png');
+    background-image: url('banner\ image\ .png');
     background-size: cover;
     background-position: center center;
-    padding: 80px 20px;
+    padding: 150px 20px;
     color: white;
     text-align: center;
     opacity: 0.9;
-    border-bottom: 4px solid #FEE715;
+    border-bottom: 4px solid #ffd200;
     animation: fadeIn 2s ease-out;
 }
 
@@ -193,7 +219,7 @@ header {
     padding: 20px;
     text-align: center;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    border: 2px solid #FEE715;
+    border: 2px solid #ffd200;
     transition: transform 0.3s ease, background-color 0.3s ease;
     opacity: 0;
     animation: slideUp 2s forwards;
@@ -233,7 +259,7 @@ footer {
 }
 
 footer a {
-    color: #FEE715;
+    color: #ffd200;
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.3s ease;
@@ -245,5 +271,5 @@ footer a:hover {
 }
 
 footer a:focus {
-    outline: 2px dashed #FEE715; /* Focus state */
+    outline: 2px dashed #ffd200; /* Focus state */
 }
