@@ -175,7 +175,7 @@ header {
 
 /* Optional: Add zoom effect on hover for batch images */
 .batch-card:hover .batch-img {
-    transform: scale(1.05); /* Slight zoom-in effect */
+    transform: scale(1.03); /* Slight zoom-in effect */
 }
 
 /* Event Banner */
