@@ -1,4 +1,7 @@
 /* Global Styles */
+*{
+    font-family:sprite graffiti;
+}
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
