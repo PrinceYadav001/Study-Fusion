@@ -1,4 +1,5 @@
 # 📚 Study Fusion – Galgotias University B.Tech Resources
+<img width="1918" height="928" alt="image" src="https://github.com/user-attachments/assets/c8fba945-ce8c-475d-9954-f8e4718f2f03" />
 
 A free, student-built platform providing organized study resources for all 8 semesters of B.Tech at Galgotias University. Includes YouTube video links, notes, and subject-wise content — all in one place.
 
