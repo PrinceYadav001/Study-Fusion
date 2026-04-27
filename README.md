@@ -8,7 +8,7 @@ A free, student-built platform providing organized study resources for all 8 sem
 
 ## 🌐 Live Preview
 
-Open `index.html` in any browser — no server or installation required.
+**[https://studyfusion.vercel.app/](https://studyfusion.vercel.app/)**
 
 ---
 
